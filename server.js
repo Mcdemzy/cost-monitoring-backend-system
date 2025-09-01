@@ -1,5 +1,5 @@
-const app = require('./app');
-const mongoose = require('mongoose');
+const app = require("./app");
+const mongoose = require("mongoose");
 
 // Connect to database
 const connectDB = async () => {
@@ -25,7 +25,7 @@ const server = app.listen(PORT, () => {
 });
 
 // Handle unhandled promise rejections
-process.on('unhandledRejection', (err, promise) => {
+process.on("unhandledRejection", (err, promise) => {
   console.log(`Error: ${err.message}`);
   // Close server & exit process
   server.close(() => process.exit(1));
