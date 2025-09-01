@@ -1,8 +1,8 @@
 {
-  "name": "cost-monitoring-system",
+  "name": "cost-monitoring-system-backend",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Backend for a Cost Monitoring System",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
