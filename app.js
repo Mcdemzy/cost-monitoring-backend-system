@@ -20,7 +20,7 @@ const corsOptions = {
     const allowedOrigins = [
       "http://localhost:5173", // Local development
       "https://your-frontend-domain.vercel.app", // Your frontend Vercel domain
-      "https://plenty-events.vercel.app", // Example - replace with your actual domain
+      "https://cash-advance-monitoring.vercel.app", // Example - replace with your actual domain
     ];
 
     if (allowedOrigins.indexOf(origin) !== -1) {
