@@ -1,7 +1,22 @@
 const express = require("express");
 const router = express.Router();
-const { registerStaff } = require("../controllers/staff");
+const {
+  registerStaff,
+  getAllStaff,
+  getStaff,
+  updateStaff,
+  deleteStaff,
+  searchStaff,
+} = require("../controllers/staff");
 
-router.post("/register-staff", registerStaff);
+// Public routes
+router.post("/register", registerStaff);
+
+// Protected routes (add authentication middleware later)
+router.get("/", getAllStaff);
+router.get("/search/:query", searchStaff);
+router.get("/:id", getStaff);
+router.put("/:id", updateStaff);
+router.delete("/:id", deleteStaff);
 
 module.exports = router;
